@@ -3,6 +3,11 @@ class Vector:
     def __init__(self,lst):
         self._values = list(lst)    # 复制lst到_value，防止在对象外更改值
 
+    @classmethod
+    def zero(cls, dim):
+        """返回一个dim维的零向量"""
+        return cls([0] * dim)
+
     def __add__(self,other):
         """向量加法，返回结果向量"""
         assert len(self) == len(other), "Error in adding. Length of vectors must be same."
