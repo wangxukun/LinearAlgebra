@@ -1,4 +1,5 @@
 from playLA.Vector import Vector
+import playLA.module1
 
 if __name__ == '__main__':
 
@@ -16,3 +17,6 @@ if __name__ == '__main__':
 
     print("+{} = {}".format(vec, +vec))
     print("-{} = {}".format(vec, -vec))
+
+    print("Printer print : ")
+    playLA.module1.printer(2025)
