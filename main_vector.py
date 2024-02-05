@@ -20,3 +20,7 @@ if __name__ == '__main__':
 
     print("Printer print : ")
     playLA.module1.printer(2025)
+
+    zero2 = Vector.zero(2)
+    print(zero2)
+    print("{} + {} = {}".format(vec, zero2, vec + zero2))
